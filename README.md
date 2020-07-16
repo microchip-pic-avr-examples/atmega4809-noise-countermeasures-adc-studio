@@ -17,7 +17,7 @@ The example code is based on the application note [AN2551](#Related-Documentatio
     - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
     - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
 - ATmega_DFP 1.4.351 or later
-- AVR/GNU C Compiler 5.4.0 (buildt into studio)
+- AVR/GNU C Compiler 5.4.0 (built into studio)
 
 ## Hardware Used
 
@@ -38,9 +38,9 @@ The example code is based on the application note [AN2551](#Related-Documentatio
     #define SAMPLING_DELAY 0
     #define ENABLE_ASDV 0 
     ```
-4. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`
-5. Open data visualizer under `Tools->Data Visualizer` to view the messages which is transmitted through UART. The baud rate is `19200`
-7. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples
+4. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`.
+5. Open data visualizer under `Tools->Data Visualizer` to view the messages which is transmitted through UART. The baud rate is `19200`.
+7. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples.
     * Alternatively you can open the provided MPLAB Data Visualizer config `MPLAB_Data_Visualizer_Config_Noise_Countermesure.json` file. Make sure the correct COM port is selected when it's open.
 
 Filtered ADC values will be passed over the UART port, these can be parsed or graphed for a visual understanding of ADC value.
