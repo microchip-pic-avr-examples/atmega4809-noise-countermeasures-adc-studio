@@ -2,9 +2,10 @@
 
 # ATMEGA4809 Noise Countermeasures for ADC Applications
 
-This is an example for noise countermeasures for ADC applications on the ATMEGA4809, this is a general example which is applicable to the whole megaAVR 0-series. In the ADCs implemented in megaAVR® 0-series, the input signal is fed through a Sample-and-Hold circuit which ensures that the input voltage to the ADC is held at a constant level during sampling.
+This is an example for noise countermeasures for ADC applications on the ATmega4809, this is a general example which is applicable to the whole megaAVR® 0-series. In the ADCs implemented in megaAVR® 0-series, the input signal is fed through a Sample-and-Hold circuit which ensures that the input voltage to the ADC is held at a constant level during sampling.
 
-The example code is based on the application note [AN2551](#Related-Documentation)
+The example code is based on the application note [AN2551](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en600674).
+
 ## Related Documentation
 
 - [AN2551 -  Noise Countermeasures for ADC Applications ](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en600674)
@@ -25,26 +26,27 @@ The example code is based on the application note [AN2551](#Related-Documentatio
 
 ## Setup
 
-* The ADC input is mapped to `PD5` and will change the ADC values being sent over UART depending on the voltage applied.
+* The ADC input is mapped to `PD5` and will change the ADC values being sent over UART depending on the voltage applied
 
 ## Operation
 
-1. Open `NoiseCountermeasuresforADCApplicationswithmegaAVR0-series.atsln` in Atmel Studio
-2. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
-3. Use these defines to plot a graph without noise
+1. Download the zip file or clone the example to get the source code.
+2. Open `NoiseCountermeasuresforADCApplicationswithmegaAVR0-series.atsln` in Atmel Studio
+3. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
+4. Use these defines to plot a graph without noise
     ```c
     #define HARMONIC_NOISE 0
     #define ADC_64X_ACCUMULATOR_ENABLE 0
     #define SAMPLING_DELAY 0
     #define ENABLE_ASDV 0 
     ```
-4. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`.
-5. Open data visualizer under `Tools->Data Visualizer` to view the messages which is transmitted through UART. The baud rate is `19200`.
-7. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples.
-    * Alternatively you can open the provided MPLAB Data Visualizer config `MPLAB_Data_Visualizer_Config_Noise_Countermesure.json` file. Make sure the correct COM port is selected when it's open.
+5. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`.
+6. Open data visualizer under `Tools->Data Visualizer` to view the messages which is transmitted through UART. The baud rate is `19200`.
+7. Follow Appendix A in [AN2551](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en600674) for step by step instructions on how to graph the samples.
+    * Alternatively, the MPLAB Data Visualizer can be used. To start plotting data, click load workspace and choose the provided config file `MPLAB_Data_Visualizer_Config_Noise_Countermesure.json`. Make sure the correct COM port is selected when it is opened. Documentation for the MPLAB Data Visualizer can be opened inside the visualizer by clicking the ‘?’ symbol or by pressing F1 
 
 Filtered ADC values will be passed over the UART port, these can be parsed or graphed for a visual understanding of ADC value.
 
 ## Conclusion
 
-We have here shown how to get started with the [AN2551](#Related-Documentation) appnote. For more details about the code and theory of operation please inspect the appnote itself.
+We have here shown how to get started with the [AN2551](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en600674) appnote. For more details about the code and theory of operation please inspect the appnote itself.
