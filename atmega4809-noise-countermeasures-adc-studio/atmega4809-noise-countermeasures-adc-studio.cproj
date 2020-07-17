@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>NoiseCountermeasuresforADCApplicationswithmegaAVR0-series</AssemblyName>
-    <Name>NoiseCountermeasuresforADCApplicationswithmegaAVR0-series</Name>
-    <RootNamespace>NoiseCountermeasuresforADCApplicationswithmegaAVR0-series</RootNamespace>
+    <AssemblyName>atmega4809-noise-countermeasures-adc-studio</AssemblyName>
+    <Name>atmega4809-noise-countermeasures-adc-studio</Name>
+    <RootNamespace>atmega4809-noise-countermeasures-adc-studio</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
