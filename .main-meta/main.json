@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.studio.project.atmega4809-noise-countermeasures-adc-studio",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "displayName": "ATmega4809 Noise Countermeasures for ADC Applications",
         "projectName": "atmega4809-noise-countermeasures-adc-studio",
         "shortDescription": "This Atmel Studio 7 example demonstrates noise countermeasures for ADC applications onmegaAVR 0-series devices",
@@ -14,7 +14,7 @@
         },
         "compiler": [
             {
-                "name": "AVR-GCC",
+                "name": "AVR GCC",
                 "semverRange": "^5.4.0"
             }
         ],
@@ -70,8 +70,11 @@
             "TCA"
         ],
         "keywords": [
-            "",
-            ""
+            "Filter",
+            "PWM",
+            "START",
+            "MPLAB Data Visualizer",
+            "Sample Accumulation"
         ],
         "additionalData": {
             "longDescription": {
